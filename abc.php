@@ -15,7 +15,7 @@
 				</tr>
 				<tr >
 					<td align="right"><label>Name:</label></td>
-					<td><input type="text" name="name"><font color="red"><?php echo @$_GET['name']; ?></font></td>
+					<td><input type="text" name="Name"><font color="red"><?php echo @$_GET['Name']; ?></font></td>
 				</tr>
 				<tr >
 					<td align="right"><label>Country:</label></td>
@@ -49,15 +49,15 @@ include('config.php');
  
  if (isset($_POST['submit']))
  {
- $food_name=$_POST['name'];
+ $food_Name=$_POST['Name'];
  $food_country=$_POST['country'];
  $food_phone=$_POST['phone'];
  $food_address=$_POST['address'];
  
  
- if($food_name=='')
+ if($food_Name=='')
  {
-	echo "<script>window.open('index.php?name=name is required','_self');</script>";
+	echo "<script>window.open('index.php?Name=Name is required','_self');</script>";
 	exit();
  }
  if($food_country=='')
@@ -78,7 +78,7 @@ if($food_address=='')
 
 
 	 
-	 $tsql="insert into work(name,country,phone,address)values('$food_name','$food_country','$food_phone','$food_address')";
+	 $tsql="insert into work(Name,country,phone,address)values('$food_Name','$food_country','$food_phone','$food_address')";
 $getResults= sqlsrv_query($conn, $tsql);
 	 
 
@@ -86,7 +86,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 //if($conn->query($que)=== true)
 //{
 	echo "<center><b>The follwing Data has been inserted into our databse:</b></center>";
-	echo "<table width='500px'align='center' border='4'><tr><td>$food_name</td><td>$food_country</td><td>$food_phone</td><td>$food_address</td></tr></table>";                      
+	echo "<table width='500px'align='center' border='4'><tr><td>$food_Name</td><td>$food_country</td><td>$food_phone</td><td>$food_address</td></tr></table>";                      
 //}
 
 
