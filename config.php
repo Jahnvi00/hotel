@@ -1,5 +1,5 @@
 <?php
-		$serverName = " tcp:mall.database.windows.net";
+		$serverName = "mall.database.windows.net";
 $connectionOptions = array(
     "Database" => "acer",
     "Uid" => "hotel",
