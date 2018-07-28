@@ -57,28 +57,28 @@ include('config.php');
  
  if($food_Name=='')
  {
-	echo "<script>window.open('index.php?Name=Name is required','_self');</script>";
+	echo "<script>window.open('abc.php?Name=Name is required','_self');</script>";
 	exit();
  }
  if($food_country=='')
  {
-	echo "<script>window.open('index.php?country=country is required','_self');</script>";
+	echo "<script>window.open('abc.php?country=country is required','_self');</script>";
 	exit();
  }
 if($food_phone=='')
  {
-	echo "<script>window.open('index.php?phone=phone is required','_self');</script>";
+	echo "<script>window.open('abc.php?phone=phone is required','_self');</script>";
 	exit();
  }
 if($food_address=='')
  {
-	echo "<script>window.open('index.php?address=address is required','_self');</script>";
+	echo "<script>window.open('abc.php?address=address is required','_self');</script>";
 	exit();
  }
 
 
 	 
-	 $tsql="insert into work(Name,country,phone,address)values('$food_Name','$food_country','$food_phone','$food_address')";
+	 $tsql="insert into dbo.work(Name,country,phone,address)values('$food_Name','$food_country','$food_phone','$food_address')";
 $getResults= sqlsrv_query($conn, $tsql);
 	 
 
