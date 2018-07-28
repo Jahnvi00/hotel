@@ -12,7 +12,7 @@
 		<br></br><table align="center" width='900' border='4'>
 			<tr>
 			
-					<th colspan="20" align="center" bgcolor="yellow"><h1>Viewing all the record</h1></th>
+					<th colspan="20" align="center" bgcolor="red"><h1>Viewing all the record</h1></th>
 				
 			</tr>
 			<tr align="center">
