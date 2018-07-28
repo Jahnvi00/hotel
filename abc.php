@@ -55,31 +55,9 @@ include('config.php');
  $food_address=$_POST['address'];
  
  
- if($food_Name=='')
- {
-	echo "<script>window.open('abc.php?Name=Name is required','_self');</script>";
-	exit();
- }
- if($food_country=='')
- {
-	echo "<script>window.open('abc.php?country=country is required','_self');</script>";
-	exit();
- }
-if($food_phone=='')
- {
-	echo "<script>window.open('abc.php?phone=phone is required','_self');</script>";
-	exit();
- }
-if($food_address=='')
- {
-	echo "<script>window.open('abc.php?address=address is required','_self');</script>";
-	exit();
- }
-
-
-	 
-	 $tsql="insert into dbo.work(Name,country,phone,address)values('$food_Name','$food_country','$food_phone','$food_address')";
-$getResults= sqlsrv_query($conn, $tsql);
+ 
+	 $que="insert into dbo.work(Name,country,phone,address)values('$food_Name','$food_country','$food_phone','$food_address')";
+$getResults= sqlsrv_query($conn, $que);
 	 
 
 
