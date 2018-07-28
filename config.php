@@ -1,8 +1,8 @@
 <?php
-		$serverName = "mall.database.windows.net";
+		$serverName = " tcp:mall.database.windows.net";
 $connectionOptions = array(
     "Database" => "acer",
-    "Uid" => "acer",
+    "Uid" => "hotel",
     "PWD" => "#Jahnvi00"
 );
 //Establishes the connection
