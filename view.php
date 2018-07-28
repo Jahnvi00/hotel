@@ -36,7 +36,7 @@
 		
 		while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
 			{
-			 $f_name = $row['name'];
+			 $f_name = $row['Name'];
 					$f_country=$row['country'];
 					$f_phone=$row['phone'];
 			$f_address=$row['address'];
@@ -48,7 +48,7 @@
 			?>
 				<tr align="center">
 				<td><?php echo $i;$i++; ?></td>
-				<td><?php echo $f_name; ?></td>
+				<td><?php echo $f_Name; ?></td>
 				<td><?php echo $f_country; ?></td>
 				<td><?php echo $f_phone; ?></td>
 					<td><?php echo $f_address; ?></td>
