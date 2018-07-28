@@ -34,11 +34,11 @@
 				
 				$i=1;
 		
-		while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
+		while($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
 			{
-			 $f_name = $row['Name'];
-					$f_country=$row['country'];
-					$f_phone=$row['phone'];
+			 $f_Name = $row['Name'];
+		         $f_country=$row['country'];
+			$f_phone=$row['phone'];
 			$f_address=$row['address'];
 			
 			//echo ($row['id'] . " " . $row['name']. . PHP_EOL);
