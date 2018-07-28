@@ -47,7 +47,7 @@
 
 include('config.php');
  
- if (isset($_POST['submit']))
+ if(isset($_POST['submit']))
  {
  $food_Name=$_POST['Name'];
  $food_country=$_POST['country'];
