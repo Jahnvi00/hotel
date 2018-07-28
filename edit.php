@@ -9,7 +9,7 @@
 	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
 		$edit_id=$row['u_id'];
-		$f_name=$row['username'];
+		$f_Name=$row['Name'];
 		$f_country=$row['country'];
 		$f_phone=$row['phone'];
 		$f_address=$row['address'];
@@ -26,14 +26,14 @@
 	<body>
 	<div class="container">
 	<?php include 'header.php'?>
-		<form method="POST" action="edit.php?edit_form=<?php echo $f_name;?>">
+		<form method="POST" action="edit.php?edit_form=<?php echo $f_Name;?>">
 			<table width="500" border="0" align="center">
 				<tr>	
 					<th colspan="4"><h1>Updating Form</h1></th>
 				</tr>
 				<tr >
 					<td align="right">Name</td>
-					<td><input type="text" name="name" value='<?php echo $f_name; ?>'></td>
+					<td><input type="text" name="Name" value='<?php echo $f_Name; ?>'></td>
 				</tr>
 				<tr >
 					<td align="right">Country</td>
@@ -63,13 +63,13 @@
 	
 		$edit_record1 = $_GET['edit_form'];
 		
-		$food_name=$_POST['name'];
+		$food_Name=$_POST['Name'];
 		$food_country=$_POST['country'];
 		$food_phone=$_POST['phone'];
 		$food_address=$_POST['address'];
 		
 		
-		$query2="UPDATE dbo.work SET username='$food_name',name='$food_country',country='$food_phone' WHERE id='$edit_record1'";
+		$query2="UPDATE dbo.work SET Name='$food_Name',Name='$food_country',country='$food_phone' WHERE id='$edit_record1'";
 		//Update dbo.work set username='jahnvi',name='dhand',id='acer'where id='acer';
 		$getResult1=sqlsrv_query($conn, $query2);
 		
