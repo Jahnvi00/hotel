@@ -26,8 +26,8 @@
 					<td><input type="text" name="phone"><font color="red"><?php echo @$_GET['phone']; ?></font></td>
 				</tr>
 				<tr >
-					<td align="right"><label>Address:</label></td>
-					<td><input type="text" name="address"><font color="red"><?php echo @$_GET['address']; ?></font></td>
+					<td align="right"><label>Adress:</label></td>
+					<td><input type="text" name="adress"><font color="red"><?php echo @$_GET['adress']; ?></font></td>
 				</tr>
 				
 				<tr>
@@ -52,11 +52,11 @@ include('config.php');
  $food_Name=$_POST['Name'];
  $food_country=$_POST['country'];
  $food_phone=$_POST['phone'];
- $food_address=$_POST['address'];
+ $food_adress=$_POST['adress'];
  
  
  
-	 $que="insert into dbo.work(Name,country,phone,address)values('$food_Name','$food_country','$food_phone','$food_address')";
+	 $que="insert into dbo.jahnvi(Name,country,phone,adress)values('$food_Name','$food_country','$food_phone','$food_adress')";
 $getResults= sqlsrv_query($conn, $que);
 	 
 
@@ -64,7 +64,7 @@ $getResults= sqlsrv_query($conn, $que);
 //if($conn->query($que)=== true)
 //{
 	echo "<center><b>The follwing Data has been inserted into our databse:</b></center>";
-	echo "<table width='500px'align='center' border='4'><tr><td>$food_Name</td><td>$food_country</td><td>$food_phone</td><td>$food_address</td></tr></table>";                      
+	echo "<table width='500px'align='center' border='4'><tr><td>$food_Name</td><td>$food_country</td><td>$food_phone</td><td>$food_adress</td></tr></table>";                      
 //}
 
 
