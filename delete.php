@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 $delete_record = $_GET['del'];
-$query ="DELETE FROM dbo.jahnvi WHERE u_id='$delete_record'";
+$query ="DELETE FROM dbo.jahnvi WHERE id='$delete_record'";
 $getResult=sqlsrv_query($conn, $query);
 echo "<script>";
         echo "window.alert('Data Deleted')
