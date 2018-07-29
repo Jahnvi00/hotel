@@ -45,7 +45,7 @@ session_start();
 			$admin_name=$_SESSION['admin_name']=$_POST['admin_name'];
 			$admin_pass=$_POST['admin_pass'];
 			
-			$query="select * from login where dbo.work='$admin_name' AND user_password='$admin_pass'";
+			$query="select * from login where dbo.jahnvi='$admin_name' AND user_password='$admin_pass'";
 			$run=mysql_query($query);
 			
 			if(mysql_num_rows($run)>0){
