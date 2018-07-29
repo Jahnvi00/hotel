@@ -2,7 +2,7 @@
 	include('config.php');
 	
 	$edit_record=$_GET['edit'];
-	$query1="SELECT * FROM dbo.work WHERE id='$edit_record'";
+	$query1="SELECT * FROM dbo.jahnvi WHERE id='$edit_record'";
 	$getResults= sqlsrv_query($conn,$query1);
 
 
@@ -12,7 +12,7 @@
 		$f_Name=$row['Name'];
 		$f_country=$row['country'];
 		$f_phone=$row['phone'];
-		$f_address=$row['address'];
+		$f_adress=$row['adress'];
 		
 	}
 ?>
@@ -44,8 +44,8 @@
 					<td><input type="text" name="phone" value='<?php echo $f_phone; ?>'></td>
 				</tr>
 				<tr >
-					<td align="right">Address</td>
-					<td><input type="text" name="address" value='<?php echo $f_address; ?>'></td>
+					<td align="right">Adress</td>
+					<td><input type="text" name="address" value='<?php echo $f_adress; ?>'></td>
 				</tr>
 				
 				<tr>
@@ -66,11 +66,11 @@
 		$food_Name=$_POST['Name'];
 		$food_country=$_POST['country'];
 		$food_phone=$_POST['phone'];
-		$food_address=$_POST['address'];
+		$food_adress=$_POST['adress'];
 		
 		
-		$query2="UPDATE dbo.work SET Name='$food_Name',Name='$food_country',country='$food_phone' WHERE id='$edit_record1'";
-		//Update dbo.work set username='jahnvi',name='dhand',id='acer'where id='acer';
+		$query2="UPDATE dbo.jahnvi SET Name='$food_Name',country='$food_country',phone='$food_phone',adress='$food_adress'  WHERE id='$edit_record1'";
+		//Update dbo.jahnvi set username='jahnvi',name='dhand',id='hotel'where id='hotel';
 		$getResult1=sqlsrv_query($conn, $query2);
 		
 		echo "<script>";
