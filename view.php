@@ -20,7 +20,7 @@
 				<td> Name</td>
 				<td>Country</td>
 				<td>Phone</td>
-				<td>Address</td>
+				<td>Adress</td>
 				<td>Delete</td>
 				<td>Edit</td>
 				<td>Detail</td>
@@ -29,7 +29,7 @@
 			<?php
 			
 			include('config.php');
-			$sqlselect="SELECT * FROM dbo.work";
+			$sqlselect="SELECT * FROM dbo.jahnvi";
 			$getResults= sqlsrv_query($conn, $sqlselect);
 				
 				$i=1;
@@ -39,7 +39,7 @@
 			 $f_Name = $row['Name'];
 		         $f_country=$row['country'];
 			$f_phone=$row['phone'];
-			$f_address=$row['address'];
+			$f_adress=$row['adress'];
 			
 			//echo ($row['id'] . " " . $row['name']. . PHP_EOL);
 			
@@ -48,10 +48,10 @@
 			?>
 				<tr align="center">
 				<td><?php echo $i;$i++; ?></td>
-				<td><?php echo $f_name; ?></td>
+				<td><?php echo $f_Name; ?></td>
 				<td><?php echo $f_country; ?></td>
 				<td><?php echo $f_phone; ?></td>
-					<td><?php echo $f_address; ?></td>
+					<td><?php echo $f_adress; ?></td>
 				<td><a href ='delete.php?del=<?php echo $u_id ?>'>Delete</a></td>
 				<td><a href='edit.php?edit=<?php echo $u_id ?>'>Edit</a></td>
 				<td><a href='view.php?detail=<?php echo $u_id ?>'>Detail</a></td>
