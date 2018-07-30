@@ -27,7 +27,7 @@
 	<div class="container">
 	<?php include 'header.php'?>
 		<form method="POST" action="edit.php?edit_form=<?php echo $Name;?>">
-			<table width="500" border="0" align="center">
+		<center>	<table width="500" border="0" align="center">
 				<tr>	
 					<th colspan="4"><h1>Updating Form</h1></th>
 				</tr>
@@ -51,6 +51,7 @@
 				<tr>
 					<td colspan="5" align="center"><input type="submit" value="Update" name="update"></td>
 				</tr>
+			</center>
 			</table>
 			
 		</form>
