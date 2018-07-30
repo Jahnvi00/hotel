@@ -8,11 +8,11 @@
 
 	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
-		$edit_id=$row['u_id'];
-		$f_Name=$row['Name'];
-		$f_country=$row['country'];
-		$f_phone=$row['phone'];
-		$f_adress=$row['adress'];
+		$edit_id=$row['id'];
+		$Name=$row['Name'];
+		$country=$row['country'];
+		$phone=$row['phone'];
+		$adress=$row['adress'];
 		
 	}
 ?>
@@ -26,26 +26,26 @@
 	<body>
 	<div class="container">
 	<?php include 'header.php'?>
-		<form method="POST" action="edit.php?edit_form=<?php echo $f_Name;?>">
+		<form method="POST" action="edit.php?edit_form=<?php echo $Name;?>">
 			<table width="500" border="0" align="center">
 				<tr>	
 					<th colspan="4"><h1>Updating Form</h1></th>
 				</tr>
 				<tr >
 					<td align="right">Name</td>
-					<td><input type="text" name="Name" value='<?php echo $f_Name; ?>'></td>
+					<td><input type="text" name="Name" value='<?php echo $Name; ?>'></td>
 				</tr>
 				<tr >
 					<td align="right">Country</td>
-					<td><input type="text" name="country" value='<?php echo $f_country; ?>'></td>
+					<td><input type="text" name="country" value='<?php echo $country; ?>'></td>
 				</tr >
 				<tr>
 					<td align="right">Phone</td>
-					<td><input type="text" name="phone" value='<?php echo $f_phone; ?>'></td>
+					<td><input type="text" name="phone" value='<?php echo $phone; ?>'></td>
 				</tr>
 				<tr >
 					<td align="right">Adress</td>
-					<td><input type="text" name="address" value='<?php echo $f_adress; ?>'></td>
+					<td><input type="text" name="adress" value='<?php echo $adress; ?>'></td>
 				</tr>
 				
 				<tr>
@@ -63,13 +63,13 @@
 	
 		$edit_record1 = $_GET['edit_form'];
 		
-		$food_Name=$_POST['Name'];
-		$food_country=$_POST['country'];
-		$food_phone=$_POST['phone'];
-		$food_adress=$_POST['adress'];
+		$Name=$_POST['Name'];
+		$country=$_POST['country'];
+		$phone=$_POST['phone'];
+		$adress=$_POST['adress'];
 		
 		
-		$query2="UPDATE dbo.jahnvi SET Name='$food_Name',country='$food_country',phone='$food_phone',adress='$food_adress'  WHERE id='$edit_record1'";
+		$query2="UPDATE dbo.jahnvi SET Name='$Name',country='$country',phone='$phone',adress='$adress' WHERE id='$edit_record1'";
 		//Update dbo.jahnvi set username='jahnvi',name='dhand',id='hotel'where id='hotel';
 		$getResult1=sqlsrv_query($conn, $query2);
 		
