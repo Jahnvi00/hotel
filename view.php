@@ -52,7 +52,7 @@
 				<td><?php echo $f_country; ?></td>
 				<td><?php echo $f_phone; ?></td>
 					<td><?php echo $f_adress; ?></td>
-				<td><a href ='delete.php?del=<?php echo $u_id ?>'>Delete</a></td>
+				<td><a href ='delete.php?del=<?php echo $phone ?>'>Delete</a></td>
 				<td><a href='edit.php?edit=<?php echo $u_id ?>'>Edit</a></td>
 				<td><a href='view.php?detail=<?php echo $u_id ?>'>Detail</a></td>
 				
