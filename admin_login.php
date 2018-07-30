@@ -14,7 +14,7 @@ session_start();
 		<form method="POST" action="admin_login.php">
 			<table border="0" align="center">
 				<tr>	
-					<th colspan="6"><h1>Booking Form</h1></th>
+					<th colspan="6"><h1>Login Form</h1></th>
 				</tr>
 				<tr >
 					<td align="right"><label>User Name:</label></td>
