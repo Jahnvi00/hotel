@@ -36,10 +36,10 @@
 		
 		while($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
 			{
-			 $f_Name = $row['Name'];
-		         $f_country=$row['country'];
-			$f_phone=$row['phone'];
-			$f_adress=$row['adress'];
+			 $Name = $row['Name'];
+		         $country=$row['country'];
+			$phone=$row['phone'];
+			$adress=$row['adress'];
 			
 			//echo ($row['id'] . " " . $row['name']. . PHP_EOL);
 			
@@ -48,13 +48,13 @@
 			?>
 				<tr align="center">
 				<td><?php echo $i;$i++; ?></td>
-				<td><?php echo $f_Name; ?></td>
-				<td><?php echo $f_country; ?></td>
-				<td><?php echo $f_phone; ?></td>
-				<td><?php echo $f_adress; ?></td>
+				<td><?php echo $Name; ?></td>
+				<td><?php echo $country; ?></td>
+				<td><?php echo $phone; ?></td>
+				<td><?php echo $adress; ?></td>
 				<td><a href='delete.php?del=<?php echo $adress ?>'>Delete</a></td>
-				<td><a href='edit.php?edit=<?php echo $u_id ?>'>Edit</a></td>
-				<td><a href='view.php?detail=<?php echo $u_id ?>'>Detail</a></td>
+				<td><a href='edit.php?edit=<?php echo $id ?>'>Edit</a></td>
+				<td><a href='view.php?detail=<?php echo $id ?>'>Detail</a></td>
 				
 					</tr>
 			<?php } ?>
