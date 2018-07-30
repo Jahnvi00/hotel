@@ -1,6 +1,6 @@
 <header>
 <div class="logo">
-	<img src="images/the-surrey-hotel-11.jpg" width="1000px" height="100px">
+	<img src="images/the-surrey-hotel-11.jpg" width="300px" height="100px">
 </div>
 	<div class="nav_right">	
 		<a href="#">Logout</a>
