@@ -9,7 +9,7 @@
 	<?php include 'header.php'?>
 	
 		<form method="POST" action="abc.php">
-			<table  border="0" align="center">
+			<center><table  border="0" align="center">
 				<tr>	
 					<th colspan="6"><h1>Booking Form</h1></th>
 				</tr>
@@ -33,6 +33,8 @@
 				<tr>
 					<td colspan="5" align="center"><input type="submit" value="Submit" name="submit"></td>
 				</tr>
+				</center>
+				
 			</table>
 			
 		</form>
