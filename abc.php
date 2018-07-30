@@ -31,7 +31,7 @@
 				</tr>
 				
 				<tr>
-					<td colspan="5" align="center"><input type="submit" value="Submit" name="submit"></td>
+					<td colspan="5" align="center"><a<input type="submit" value="Submit" name="submit"></td>
 				</tr>
 				</center>
 				
