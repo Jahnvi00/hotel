@@ -3,8 +3,10 @@
 	
 	$edit_record=$_GET['edit'];
 	$query1="SELECT * FROM dbo.jahnvi WHERE id='$edit_record'";
-	$run1=$conn->query($que1);
-  if($row=mysqli_fetch_array($run1))
+	$getResults= sqlsrv_query($conn,$query1);
+
+
+	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 
 	{
 		$edit_id=$row['id'];
