@@ -3,10 +3,9 @@
 	
 	$edit_record=$_GET['edit'];
 	$query1="SELECT * FROM dbo.jahnvi WHERE id='$edit_record'";
-	$getResults= sqlsrv_query($conn,$query1);
+	$run1=$conn->query($que1);
+  if($row=mysqli_fetch_array($run1))
 
-
-	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
 		$edit_id=$row['id'];
 		$Name=$row['Name'];
@@ -63,8 +62,7 @@
 	if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
-		
-		$Name=$_POST['Name'];
+	        $Name=$_POST['Name'];
 		$country=$_POST['country'];
 		$phone=$_POST['phone'];
 		$adress=$_POST['adress'];
