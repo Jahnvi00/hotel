@@ -53,7 +53,9 @@ session_start();
 				echo "<script>window.open('view.php?logged=logged in successfully...!','_self')</script>";
 			}
 			else
-			
+				{
+				echo "<script>alert('Password or User Name is incorrect!')</script>";
+			}
 			
 		}
 ?>
