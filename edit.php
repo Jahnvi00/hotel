@@ -63,7 +63,7 @@
 <?php
 	if(isset($_POST['update'])){
 	
-		$edit_record1 = $_GET['edit_form'];
+		$edit_record1=$_GET['edit_form'];
 	        $Name=$_POST['Name'];
 		$country=$_POST['country'];
 		$phone=$_POST['phone'];
