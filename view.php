@@ -53,7 +53,7 @@
 				<td><?php echo $phone; ?></td>
 				<td><?php echo $adress; ?></td>
 				<td><a href='delete.php?del=<?php echo $adress ?>'>Delete</a></td>
-				<td><a href='edit.php?edit=<?php echo $id ?>'>Edit</a></td>
+				<td><a href='edit.php?edit=<?php echo $adress ?>'>Edit</a></td>
 				<td><a href='view.php?detail=<?php echo $id ?>'>Detail</a></td>
 				
 					</tr>
