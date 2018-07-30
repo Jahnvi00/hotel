@@ -9,7 +9,7 @@
 		<?php /*echo @$_GET['updated']; ?><?php echo @$_GET['logged']; */?>
 			</font></center>
 		<a href="logout.php">Logout</a>
-		<br></br><table align="center" width='900' border='4'>
+	<center>	<br></br><table align="center" width='900' border='4'>
 			<tr>
 			
 					<th colspan="20" align="center" bgcolor="red"><h1>Viewing all the record</h1></th>
@@ -58,6 +58,7 @@
 				
 					</tr>
 			<?php } ?>
+		</center>
 		</table>
 		<?php include 'footer.php'?>
 		<div>
