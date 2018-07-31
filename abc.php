@@ -35,8 +35,7 @@
 					<td colspan="5" align="center"><a<input type="submit" value="Submit" name="submit"></td>
 				</tr>
 				 <p id="demo"></p>
-        <button onclick="as()">View the Record 
-		<a href="view.php">View</a></button>
+        <button onclick="as()">View the Record </button>
 				</center>
 				
 			</table>
