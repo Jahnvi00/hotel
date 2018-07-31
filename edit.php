@@ -24,7 +24,7 @@
 	<body>
 	<div class="container">
 	<?php include 'header.php'?>
-		<form method="POST" action="edit.php?edit_form=<?php echo $id;?>">
+		<form method="POST" action="edit.php?edit_form=<?php echo $adress;?>">
 		<center>	<table width="500" border="0" align="center">
 				<tr>	
 					<th colspan="4"><h1>Updating Form</h1></th>
@@ -67,7 +67,7 @@
 		$adress=$_POST['adress'];
 		
 		
-		$query2="UPDATE dbo.jahnvi SET Name='$Name',country='$country',phone='$phone',adress='$adress' WHERE id='$edit_record1'";
+		$query2="UPDATE dbo.jahnvi SET Name='$Name',country='$country',phone='$phone',adress='$adress' WHERE adress='$edit_record1'";
 		//Update dbo.jahnvi set username='jahnvi',name='dhand',id='hotel'where id='hotel';
 		$getResult1=sqlsrv_query($conn, $query2);
 		
