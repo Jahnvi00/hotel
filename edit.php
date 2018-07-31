@@ -1,6 +1,5 @@
 <?php
 	include('config.php');
-	
 	$edit_record=$_GET['edit'];
 	$query1="SELECT * FROM dbo.jahnvi WHERE adress='$edit_record'";
 	$getResults= sqlsrv_query($conn,$query1);
