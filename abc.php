@@ -5,8 +5,7 @@
 	</head>
 	
 	<body>
-		 <p id="demo"></p>
-        <button onclick="as()">View the Record</button>
+		
 	<div class="container">
 	<?php include 'header.php'?>
 	
@@ -35,11 +34,14 @@
 				<tr>
 					<td colspan="5" align="center"><a<input type="submit" value="Submit" name="submit"></td>
 				</tr>
+				 <p id="demo"></p>
+        <button onclick="as()">View the Record</button>
 				</center>
 				
 			</table>
 			
 		</form>
+		
 		<?php include 'footer.php'  ?>
 		<div>
         </div>
