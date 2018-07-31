@@ -3,9 +3,7 @@
 	$edit_record=$_GET['edit'];
 	$query1="SELECT * FROM dbo.jahnvi WHERE adress='$edit_record'";
 	$getResults= sqlsrv_query($conn,$query1);
-
-
-	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
+       while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 
 	{
 		$edit_id=$row['id'];
@@ -26,7 +24,7 @@
 	<body>
 	<div class="container">
 	<?php include 'header.php'?>
-		<form method="POST" action="edit.php?edit_form=<?php echo $adress;?>">
+		<form method="POST" action="edit.php?edit_form=<?php echo $id;?>">
 		<center>	<table width="500" border="0" align="center">
 				<tr>	
 					<th colspan="4"><h1>Updating Form</h1></th>
