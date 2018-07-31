@@ -34,7 +34,16 @@
 				<tr>
 					<td colspan="5" align="center"><a<input type="submit" value="Submit" name="submit"></td>
 				</tr>
-				
+					</table>
+			
+		</form>
+		<?php include 'footer.php'  ?>
+		<div>
+        </div>
+        </div>
+	</body>
+</html>
+<?php
 				
 
 include('config.php');
