@@ -5,7 +5,8 @@
 	</head>
 	
 	<body>
-		 <button type="button" onclick=rrr()>View the Record</button>
+		 <p id="demo"></p>
+        <button onclick="as()">View the Record</button>
 	<div class="container">
 	<?php include 'header.php'?>
 	
