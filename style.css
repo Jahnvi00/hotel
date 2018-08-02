@@ -5,8 +5,8 @@ body{
 nav ul li{
     text-decoration: none;
     list-style: none;
-    padding: 25px;
-    float: left;
+    padding: 100px;
+    float: center;
 }
 nav ul li a{
     text-decoration: none; 
@@ -14,7 +14,7 @@ nav ul li a{
 }
 header{
     background-color: black;
-    height: 200px;
+    height: 500px;
     margin: 0;
 }
 footer{
@@ -24,6 +24,6 @@ footer{
 }
 logo
 {
-    height: 50px;
-    width: 50px;
+    height: 50opx;
+    width: 500px;
 }
