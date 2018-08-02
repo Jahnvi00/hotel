@@ -1,5 +1,5 @@
 <html>
-	<head><title>Viewing the Record</title>
+	<head><title>Booking Record</title>
 	<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
