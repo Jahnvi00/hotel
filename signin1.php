@@ -2,48 +2,43 @@
 
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
-
-
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- Custom Theme files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- //Custom Theme files -->
-<!-- web font -->
-<link href="//fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
-<!-- //web font -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Form </title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-	<!-- main -->
-	<div class="main main-agileits">
-		<h1>User Sign In </h1>
-		<div class="main-agilerow"> 
-			<div class="signup-wthreetop">
-				<h2>Welcome to Sign In</h2>
-				
-			</div>	
-			<div class="contact-wthree">
-				<form action="signin.php" method="post">
-					
-					<div class="form-w3step1">
-						<input type="text" name="admin_name" placeholder="Username" required=""> 
-						<input type="password" name="admin_pass" placeholder="Password" required=""> 
-					</div> 
-					
-					<input type="submit" name="login_btn" value="Sign In">
-				</form>
-			</div>  
+	<div class="container">
+		<div class="box"> 
+				<form action="signin1.php" method="post">
+					<div class="main">
+						<div class="heading">
+				            		<h2>Signin Here</h2>
+				        	</div>
+						<div class="mail">
+							<input type="text" name="admin_name" placeholder="Name" required=""> 
+							<div class="clear"></div>
+				       		</div>
+						<div class="pass">
+						<input type="password" name="admin_pass" placeholder="Password" required=""> <div class="clear"></div>
+						</div> 
+					</div>
+					<div class="btn">
+						<input type="submit" name="login_btn" value="Sign In">
+                        <div id="link">
+                            <a href="index.html" class="a1">Home</a>
+						<a href="form1.php" class="a2">Register</a>
+                        </div>
+                        
+					</div>
+				</form> 
 		</div>	
 	</div>	
-	<!-- //main -->
-	<!-- copyright -->
-	<div class="w3copyright-agile">
-		<p>© 2017 Form Signup Form. All rights reserved </p>
-	</div>
+	<div class="footer">
+				<p>&copy;2018. All Rights Reserved</p>
+            </div>
 	
 </body>
 </html>
@@ -55,10 +50,7 @@ if(isset($_POST['login_btn'])){
 $username_var=$_POST['admin_name'];
 $password_var=$_POST['admin_pass'];    
 $_SESSION['username']=$username;
-  //  echo "<script>alert($username_var)</script>" ;
-    
-    //  echo "<script>alert($password_var)</script>" ;
-    if($username_var=="admin"&&$password_var=="admin"){
+    if($username_var=="admin"&&$password_var=="12345"){
         
         header('Location:view1.php');
     }else{
@@ -70,21 +62,25 @@ $row=sqlsrv_fetch_array($result);
     
          if($username_var==null || $username_var=="" && $password_var==null || $password_var=="")
          {
-    echo "<script>alert('Please enter a valid Username or Password!')</script>";
+    echo "<script>";
+		echo "window.alert('Please Enter Email & Password ')
+		window.location.href='form1.php';
+		</script>";
             }
        
     
-    else if($row['username']==$username_var && $row['password_']==$password_var)
+    else if($row['Username_']==$username_var && $row['Password_']==$password_var)
     {
-   
-        
-       // echo "<script>alert('Login Succesfull!');</script>";
-        header('Location:view1.php');
+        header('Location:order.html');
 }
 else{
-   // echo "<script>alert('Login Failed!');</script>";
-    header('Location:signin1.php');
+
+   echo "<script>";
+		echo "window.alert('Please Enter Valid Email & Password ')
+		window.location.href='form1.php';
+		</script>";
 }
     }
 }
 ?>
+
