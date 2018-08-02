@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 	   <title>Registration Form</title>
-	  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	  <link href="style.css" rel="stylesheet" type="text/css" media="all" />
     </head>
 
     <body>
@@ -33,8 +33,7 @@
 				        </div>
                        <div class="btn">
 				                <button type="submit" name="submit">Sign Up</button><br>
-                                <div  class="btnn1" ><a id="one" href="signin1.php">Sign In</a></div>
-                                <div class="btnn2"> <a id="two" href="index.html">Home</a></div>
+                               
 				            <div class="clear"></div>
 			             </div>
 			     </div>
