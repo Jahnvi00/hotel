@@ -7,7 +7,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login Form </title>
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
 	<div class="container">
@@ -27,11 +27,7 @@
 					</div>
 					<div class="btn">
 						<input type="submit" name="login_btn" value="Sign In">
-                        <div id="link">
-                            <a href="index.html" class="a1">Home</a>
-						<a href="form1.php" class="a2">Register</a>
-                        </div>
-                        
+                       
 					</div>
 				</form> 
 		</div>	
@@ -71,7 +67,7 @@ $row=sqlsrv_fetch_array($result);
     
     else if($row['Username_']==$username_var && $row['Password_']==$password_var)
     {
-        header('Location:order.html');
+        header('Location:index.html');
 }
 else{
 
