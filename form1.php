@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 	   <title>Registration Form</title>
-	  <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+	  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     </head>
 
     <body>
