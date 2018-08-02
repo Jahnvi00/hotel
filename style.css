@@ -1,6 +1,6 @@
 body{
     background-image: url(images/405858adc9437e4.jpg);
-    color:crimson;
+    color:white;
 }
 nav ul li{
     text-decoration: none;
@@ -10,7 +10,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none; 
-    color: aliceblue;
+    color: black;
 }
 header{
     background-color: blue;
